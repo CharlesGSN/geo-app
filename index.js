@@ -10,7 +10,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://0.0.0.0:27017/todolistDB", {useNewUrlParser: true})
+mongoose.connect("mongodb+srv://nasilelecharles:George!3089@cluster0.gbpxtjr.mongodb.net/todolistDB", {useNewUrlParser: true})
   .then(() => {
     console.log("Successfully connected to database.");
   })
